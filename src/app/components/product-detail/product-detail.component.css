@@ -1,0 +1,64 @@
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+h1, .title h2 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: initial;
+}
+
+h3 {
+    font-weight: 700;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 16px 0;
+    justify-content: center;
+}
+
+img {
+    width: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+.product-overview {
+    max-width: 1200px;
+    margin: 6rem auto 0;
+}
+
+.parent-container {
+    padding: 5rem;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-action {
+    display: flex;
+    justify-content: center;
+}
+
+.button-action {
+    width: 80%;
+    border-radius: 25px;
+    color: var(--primary-color);
+    padding: 10px;
+    border-color: var(--primary-color);
+    border-width: 2px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.button-action:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    border-color: transparent;
+}

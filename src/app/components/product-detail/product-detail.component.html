@@ -1,0 +1,35 @@
+<div class="parent-container">
+    <div class="grid">
+        <div class="img-display">
+            <img mat-card-image [src]="product.Image" alt="Photo of a Shiba Inu">
+        </div>
+        <div class="product-description">
+            <h1>{{product.ProductOverview}}</h1>
+            <div class="product-action">
+                <button mat-stroked-buttonn class="button-action" type="submit" (click)="onSubmit()"><fa-icon
+                        [icon]="faWhatsapp"></fa-icon>&ensp;Order</button>
+            </div>
+        </div>
+    </div>
+    <div class="product-overview">
+        <div class="title">
+            <h2>Product Overview</h2>
+        </div>
+        <div class="product-details">
+            <h3>Overview</h3>
+            <p>{{product.ProductOverview}}</p>
+        </div>
+        <div class="product-details" *ngIf="product.KeyBenefits.length > 0">
+            <h3>Key Benefits</h3>
+            <ul *ngFor="let benefit of product.KeyBenefits">
+                <li>{{benefit}}</li>
+            </ul>
+        </div>
+        <div class="product-details" *ngIf="product.Usage.length > 0">
+            <h3>Usage</h3>
+            <ul *ngFor="let benefit of product.Usage">
+                <li>{{benefit}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

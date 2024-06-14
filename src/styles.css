@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #45A12C;
+    --secondary-color: #aa5d08;
+    --card-color: white;
+    --mdc-outlined-text-field-focus-outline-color: var(--secondary-color) !important;
+    --mdc-outlined-text-field-caret-color: var(--primary-color);
+    --mdc-outlined-text-field-outline-color: var(--primary-color);
+    --mdc-outlined-text-field-hover-outline-color: var(--secondary-color);
+    --mdc-outlined-text-field-label-text-color: var(--secondary-color);
+    --mdc-outlined-text-field-focus-label-text-color: var(--primary-color);
+    --mdc-outlined-text-field-hover-label-text-color: var(--primary-color);
+
+    /* pagnitor */
+    --mat-paginator-container-background-color: transparent;
+    --mat-option-selected-state-label-text-color: var(--secondary-color);
+    --mat-select-focused-arrow-color: var(--primary-color);
+
+    /* mat menu */
+    --mat-menu-container-color: var(--primary-color);
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+mat-toolbar {
+    background: var(--secondary-color) !important;
+}
+
+.button-primary {
+    background-color: var(--primary-color) !important;
+    color: white;
+    /* Ensure text is readable */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+.footer {
+    background-color: var(--primary-color) !important;
+    color: white;
+    /* Ensure text is readable */
+}
+
+mat-card {
+    background-color: var(--card-color) !important;
+}
+
+.catch-phrase {
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 20px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 24px;
+    user-select: none
+}
+
+/* animation */
+/* Pop-up animation */
+@keyframes popUp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Initial state before the element comes into view */
+.app-scroll-animation {
+    transform: scale(0.5);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* Triggered animation state */
+.app-scroll-animation.in-view {
+    animation: popUp 0.5s forwards;
+    /* Adjust duration as needed */
+}

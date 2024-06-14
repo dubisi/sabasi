@@ -1,0 +1,10 @@
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+h1, h2, p {
+    text-align: left;
+    color: #2c3e50;
+}

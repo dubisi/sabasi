@@ -1,0 +1,30 @@
+<div class="catch-phrase">
+  <div class="content">
+    <p>Experience the Power of Nature with Sabasi</p>
+  </div>
+</div>
+<mat-toolbar color="primary" class="sticky-toolbar">
+  <span mat-button routerLink="/home" class="logo">SABASI</span>
+  <span class="spacer"></span>
+
+  <!-- Menu icon visible only on small screens -->
+  <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-icon" aria-label="Menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <!-- Buttons visible only on larger screens -->
+  <nav class="nav-buttons">
+    <button mat-button routerLink="/home" routerLinkActive="active-link">Home</button>
+    <button mat-button routerLink="/catalog" routerLinkActive="active-link">Catalog</button>
+    <button mat-button routerLink="/about" routerLinkActive="active-link">About Us</button>
+    <button mat-button routerLink="/contact" routerLinkActive="active-link">Contact</button>
+  </nav>
+</mat-toolbar>
+
+<!-- Menu for small screens -->
+<mat-menu #menu="matMenu">
+  <button mat-menu-item routerLink="/home" routerLinkActive="active-link">Home</button>
+  <button mat-menu-item routerLink="/catalog" routerLinkActive="active-link">Catalog</button>
+  <button mat-menu-item routerLink="/about" routerLinkActive="active-link">About Us</button>
+  <button mat-menu-item routerLink="/contact" routerLinkActive="active-link">Contact</button>
+</mat-menu>

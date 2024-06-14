@@ -1,0 +1,49 @@
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 100%;
+    padding: 3rem;
+    justify-content: space-evenly;
+}
+
+.logo {
+    align-content: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Optional: background color on hover */
+}
+
+li a:active {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Optional: background color on click */
+}
+
+span {
+    display: flex;
+    justify-content: center;
+}
+
