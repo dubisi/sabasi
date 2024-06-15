@@ -17,12 +17,6 @@
   width: 200px;
 }
 
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
 .spacer {
   flex: 1 1 auto;
 }
@@ -47,6 +41,11 @@ nav button {
 
   .menu-icon {
     display: block;
+  }
+
+  .sticky-toolbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 

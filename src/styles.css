@@ -14,6 +14,7 @@ html {
     --mdc-outlined-text-field-label-text-color: var(--secondary-color);
     --mdc-outlined-text-field-focus-label-text-color: var(--primary-color);
     --mdc-outlined-text-field-hover-label-text-color: var(--primary-color);
+    --mdc-outlined-text-field-input-text-color: black;
 
     /* pagnitor */
     --mat-paginator-container-background-color: transparent;
